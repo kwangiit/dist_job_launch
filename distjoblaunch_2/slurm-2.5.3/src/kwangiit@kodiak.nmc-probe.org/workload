@@ -1,0 +1,4 @@
+srun -N1 /bin/sleep 10
+srun -N1 /bin/sleep 10
+srun -N1 /bin/sleep 20
+srun -N1 /bin/sleep 30

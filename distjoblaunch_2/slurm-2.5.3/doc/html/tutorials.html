@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+                        "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="keywords" content="Simple Linux Utility for Resource Management, SLURM, resource management,
+Linux clusters, high-performance computing">
+<meta name="description" content="Simple Linux Utility for Resource Management">
+<title>Simple Linux Utility for Resource Management</title>
+<link href="linuxstyles.css" rel="stylesheet" type="text/css">
+<link href="slurmstyles.css" rel="stylesheet" type="text/css">
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+  google.load('search', '1', {language : 'en', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '011612593158067573887:bmckasj55jw', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+
+function window_check ()
+{
+	obj = document.getElementById('navigation');
+	if ((window.innerWidth>=800) && (window.innerHeight>=700) &&
+	    (screen.width>=800) && (screen.height>=700)) {
+	   obj.style.position = 'fixed';
+	} else {
+	   obj.style.position = 'absolute';
+	}
+}
+
+window.onload = window_check;
+window.onresize = window_check;
+
+</script>
+
+</head>
+
+<body><div id="container"><div id="row">
+
+<div id="navigation">
+<a href="slurm.html"><img class="displayed" src="slurm_logo.png" width="130" usemap="#Map"></a>
+
+<div id="version">Version 2.5</div>
+<p></p>
+<div id="slurmh2">About</div>
+<ul>
+	  <li><a href="overview.html" class="nav">Overview</a></li>
+	  <li><a href="meetings.html" class="nav">Meetings</a></li>
+	  <li><a href="news.html" class="nav">What's New</a></li>
+	  <li><a href="publications.html" class="nav">Publications</a></li>
+	  <li><a href="testimonials.html" class="nav">Testimonials</a></li>
+	  <li><a href="team.html" class="nav">SLURM Team</a></li>
+</ul>
+<div id="slurmh2">Using</div>
+<ul>
+	  <li><a href="tutorials.html" class="nav">Tutorials</a></li>
+	  <li><a href="documentation.html" class="nav">Documentation</a></li>
+	  <li><a href="faq.html" class="nav">FAQ</a></li>
+	  <li><a href="help.html" class="nav">Getting Help</a></li>
+	  <li><a href="mail.html"  class="nav">Mailing Lists</a></p>
+</ul>
+<div id="slurmh2">Installing</div>
+<ul>
+	  <li><a href="platforms.html" class="nav">Platforms</a></li>
+	  <li><a href="download.html" class="nav">Download</a></li>
+	  <li><a href="download.html#related" class="nav">Related Software</a></li>
+	  <li><a href="quickstart_admin.html" class="nav">Installation Guide</a></li>
+</ul>
+<a href="http://www.schedmd.com"><img class="displayed" src="schedmd.png" width="130" usemap="#Map"></a>
+</div>
+
+<div id="content">
+
+<div id="cse">Loading...</div>
+
+
+<h1>SLURM Tutorials</h1>
+
+<h2>Slurm Workload Manager: Architecture, Configuration and Use</h2>
+<p>Introduction to the SLURM Resource Manager for users and system
+administrators, plus some material for Slurm programmers:
+<a href="http://www.open-mpi.org/video/?category=slurm">Slurm Workload Manager</a></p>
+
+<h2>Introduction to SLURM Tutorial</h2>
+<p>Introduction to the SLURM Resource Manager for users and system
+administrators. Tutorial covers SLURM architecture, daemons and commands.
+Learn how to use a basic set of commands.
+Learn how to build, configure, and install SLURM.</p>
+
+<ul>
+<li>Introduction to SLURM video on <a href="http://www.youtube.com">YouTube</a> (in eight parts)</a></li>
+<ol>
+<li><a href="http://www.youtube.com/watch?v=NH_Fb7X6Db0&feature=relmfu">Introduction to SLURM, Part 1</a></li>
+<li><a href="http://www.youtube.com/watch?v=LJrY0AthLB8&feature=relmfu">Introduction to SLURM, Part 2</a></li>
+<li><a href="http://www.youtube.com/watch?v=MI9jHavOt5o&feature=relmfu">Introduction to SLURM, Part 3</a></li>
+<li><a href="http://www.youtube.com/watch?v=aljhVYwyAoM&feature=relmfu">Introduction to SLURM, Part 4</a></li>
+<li><a href="http://www.youtube.com/watch?v=-4XFG5MoHQY&feature=relmfu">Introduction to SLURM, Part 5</a></li>
+<li><a href="http://www.youtube.com/watch?v=PAYMsuqf-CA&feature=relmfu">Introduction to SLURM, Part 6</a></li>
+<li><a href="http://www.youtube.com/watch?v=kFW0tk7aDDo&feature=relmfu">Introduction to SLURM, Part 7</a></li>
+<li><a href="http://www.youtube.com/watch?v=VozfZGZIX8w&feature=relmfu">Introduction to SLURM, Part 8</a></li>
+</ol>
+<li><a href="tutorial_slurm_intro.avi">Introduction to SLURM video (one 330 MB file)</a></li>
+<li><a href="tutorial_intro_files.tar">Tar-ball</a> with sample configuration files</li>
+</ul>
+
+<h2>SLURM Database Usage</h2>
+<p>SLURM Resource Manager databasae for users and system administrators.
+Tutorial covers SLURM architecture for database use, accounting commands,
+resource limits, fair share scheduling, and accounting configuration.</p>
+
+<ul>
+<li>SLURM Database Usage video on <a href="http://www.youtube.com">YouTube</a> (in two parts)</a></li>
+<ol>
+<li><a href="http://www.youtube.com/watch?v=8UfzXnzSmL4&feature=relmfu">SLURM Database Usage, Part 1</a></li>
+<li><a href="http://www.youtube.com/watch?v=wZrJQKRc2Vg&feature=relmfu">SLURM Database Usage, Part 2</a></li>
+</ol>
+</ul>
+
+<h2>More Tutorials Coming Soon...</h2>
+
+<p style="text-align:center;">Last modified 18 January 2013</p>
+
+</div> <!-- closes "row" -->
+</div> <!-- closes "content" -->
+<div id="row">
+<div id="footer">
+<div id="left">&nbsp;&nbsp;<a href="disclaimer.html" target="_blank" class="privacy">Legal Notices</a></div>
+<div id="right"><span class="ucrlnum"></span></div>
+</div>
+
+<div id="footer2">
+<div style="clear:both;"></div>
+</div>
+</div> <!-- closes "row" -->
+
+</div> <!-- closes "container" -->
+
+</body>
+</html>
+

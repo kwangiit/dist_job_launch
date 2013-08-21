@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+                        "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="keywords" content="Simple Linux Utility for Resource Management, SLURM, resource management,
+Linux clusters, high-performance computing">
+<meta name="description" content="Simple Linux Utility for Resource Management">
+<title>Simple Linux Utility for Resource Management</title>
+<link href="linuxstyles.css" rel="stylesheet" type="text/css">
+<link href="slurmstyles.css" rel="stylesheet" type="text/css">
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+  google.load('search', '1', {language : 'en', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '011612593158067573887:bmckasj55jw', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+
+function window_check ()
+{
+	obj = document.getElementById('navigation');
+	if ((window.innerWidth>=800) && (window.innerHeight>=700) &&
+	    (screen.width>=800) && (screen.height>=700)) {
+	   obj.style.position = 'fixed';
+	} else {
+	   obj.style.position = 'absolute';
+	}
+}
+
+window.onload = window_check;
+window.onresize = window_check;
+
+</script>
+
+</head>
+
+<body><div id="container"><div id="row">
+
+<div id="navigation">
+<a href="slurm.html"><img class="displayed" src="slurm_logo.png" width="130" usemap="#Map"></a>
+
+<div id="version">Version 2.5</div>
+<p></p>
+<div id="slurmh2">About</div>
+<ul>
+	  <li><a href="overview.html" class="nav">Overview</a></li>
+	  <li><a href="meetings.html" class="nav">Meetings</a></li>
+	  <li><a href="news.html" class="nav">What's New</a></li>
+	  <li><a href="publications.html" class="nav">Publications</a></li>
+	  <li><a href="testimonials.html" class="nav">Testimonials</a></li>
+	  <li><a href="team.html" class="nav">SLURM Team</a></li>
+</ul>
+<div id="slurmh2">Using</div>
+<ul>
+	  <li><a href="tutorials.html" class="nav">Tutorials</a></li>
+	  <li><a href="documentation.html" class="nav">Documentation</a></li>
+	  <li><a href="faq.html" class="nav">FAQ</a></li>
+	  <li><a href="help.html" class="nav">Getting Help</a></li>
+	  <li><a href="mail.html"  class="nav">Mailing Lists</a></p>
+</ul>
+<div id="slurmh2">Installing</div>
+<ul>
+	  <li><a href="platforms.html" class="nav">Platforms</a></li>
+	  <li><a href="download.html" class="nav">Download</a></li>
+	  <li><a href="download.html#related" class="nav">Related Software</a></li>
+	  <li><a href="quickstart_admin.html" class="nav">Installation Guide</a></li>
+</ul>
+<a href="http://www.schedmd.com"><img class="displayed" src="schedmd.png" width="130" usemap="#Map"></a>
+</div>
+
+<div id="content">
+
+<div id="cse">Loading...</div>
+
+
+<h1>Publications and Presentations</h1>
+
+<p>Note that some of this material contains dated information.</p>
+
+<h2>Presentations</h2>
+<ul>
+
+<!-- SC12 Slurm BOF-->
+<li><b>Presentations from Slurm Birds of a Feather, SuperComputing 2012, November 2012</b></li>
+<ul>
+<li><a href="SC12_BOF/SC12_Status.pdf">Slurm Workload Manager Project Report</a>,
+Morris Jette and Danny Auble, SchedMD</li>
+
+<li><a href="SC12_BOF/Bright_Slurm_BoF.pdf">Using Slurm for Data Aware Scheduling in the Cloud</a>,
+Martijn de Vries, BrightComputing</li>
+
+<li><a href="SC12_BOF/Bull_Slurm_BOF.pdf">Slurm Roadmap</a>,
+Eric Monchalin, Bull</li>
+
+<li><a href="SC12_BOF/MapReduce_BOF.pdf">MapReduce Support in Slurm: Releasing the Elephant</a>,
+Ralph H. Castain, Wangda Tan, Jimmy Cao and Michael Lv, Greenplum/EMC</li>
+
+<li><a href="SC12_BOF/wickberg_slurm_sc12.pdf">Slurm at Rensselaer</a>,
+Tim Wickberg, Rensselaer Polytechnic Institute</li>
+
+</ul>
+
+<!-- SLURM User Group Meeting 2012 -->
+<li><b>Presentations from SLURM User Group Meeting, October 2012</b></li>
+<ul>
+
+<li>Keynote: The OmSs Programming Model and its links to resource managers,
+Jesus Labarta, BSC</li>
+
+<li><a href="slurm_ug_2012/SUG_Oct2012_Status.pdf">SLURM Status Report</a>,
+Morris Jette and Danny Auble, SchedMD</li>
+
+<li>Site Report: <a href="slurm_ug_2012/BSC_Slurm_Site_Report_2012.pdf">BSC/RES</a>,
+Alejandro Lucero and Carles Fenoy, BSC</li>
+
+<li>Site Report: <a href="slurm_ug_2012/SUG2012_CSCS_Site.pdf">CSCS</a>,
+Stephen Trofinoff, CSCS</li>
+
+<li>Site Report: <a href="slurm_ug_2012/CEA_site_report.pdf">CEA</a>,
+Matthieu Hautreux, CEA</li>
+
+<li>Site Report: CETA/CIEMAT,
+Alfonso Pardo Diaz, CIEMAT</li>
+
+<li>Porting SLURM to Bluegene/Q,
+Don Lipari, LLNL</li>
+
+<li>Tutorial: <a href="slurm_ug_2012/SUG_Oct2012_DBD.pdf">SLURM Database Use,
+Accounting and Limits</a>,
+Danny Auble, SchedMD</li>
+
+<li>Tutorial: <a href="slurm_ug_2012/SUG-2012-Scheduling.pdf">The SLURM Scheduler Design</a>,
+Don Lipari, LLNL</li>
+
+<li>Tutorial: <a href="slurm_ug_2012/SUG-2012-Cgroup.pdf">Cgroup Support on SLURM</a>,
+Martin Perry and Yiannis Georgiou (Bull), Matthieu Hautreux (CEA)</li>
+
+<li>Tutorial: <a href="slurm_ug_2012/auks-tutorial.pdf">Kerberos and SLURM using Auks</a>,
+Matthieu Hautreux, CEA</li>
+
+<!-- day 2 -->
+
+<li>Keynote: <a href="slurm_ug_2012/2012-BSC-challenge.pdf">Challenges in Evaluating Parallel Job Schedulers</a>,
+Dror Feitelson, Hebrew University</li>
+
+<li><a href="slurm_ug_2012/SUG_Oct2012_PE.pdf">Integration of SLURM with IBM's
+Parallel Environment</a>,
+Morris Jette and Danny Auble, SchedMD</li>
+
+<li><a href="slurm_ug_2012/SUG2012-TCHPC-sbank.pdf">SLURM Bank</a>,
+Jimmy Tang and Paddy Doyle, Trinity College, Dublin</li>
+
+<li><a href="slurm_ug_2012/Bright-SUG12.pdf">Using SLURM for Data Aware Scheduling in the Cloud</a>,
+Martijn de Vries, Bright Computing</li>
+
+<li><a href="slurm_ug_2012/Energy_Accounting-BULL-SUG2012.pdf">Enhancing SLURM with Energy Consumption Monitoring and Control Features</a>,
+Yiannis Georgiou, Bull</li>
+
+<li><a href="slurm_ug_2012/MapRedSLURM.pdf">MapReduce Support in SLURM:
+Releasing the Elephant</a>,
+Ralph H. Castain, et. al., Greenplum/EMC</li>
+
+<li><a href="slurm_ug_2012/pyslurm.pdf">Using SLURM via Python</a>,
+Mark Roberts (AWE) and Stephan Gorget (EDF)</li>
+
+<li><a href="slurm_ug_2012/SUG_Oct2012_HTC.pdf">High Throughput Computing with SLURM</a>,
+Morris Jette and Danny Auble, SchedMD</li>
+
+<li><a href="slurm_ug_2012/RJMS-scalability_SUG2012.pdf">Evaluating Scalability
+and Efficiency of the Resource and Job Management System on large HPC clusters</a>,
+Yiannis Georgiou (Bull) and Matthieu Hautreux (CEA)</li>
+
+<li><a href="slurm_ug_2012/SUG2012-Soner.pdf">Integer Programming Based
+Herogeneous CPU-GPU Clusters</a>,
+Seren Soner, Bogazici University</li>
+
+<li><a href="slurm_ug_2012/SUG2012_Emeras.pdf">Job Resource Utilizaiton as a Metric for
+Clusters Comparision and Optimization</a>,
+Joseph Emeras, INRIA/LIG</li>
+
+</ul>
+
+<li><a href="pdfs/LCS_cgroups_BULL.pdf">Resource Management with Linux Control Groups in HPC Clusters</a>
+Yiannis Georgiou, Bull
+(6th Linux Collaboration Summit, April 2012)</li>
+
+<li><b>Presentations from SLURM Birds Of a Feather,
+SuperComputing 2011, November 2011</b></li>
+<ul>
+<li><a href="SC11_BOF/SchedMD_BOF_SC11.pdf">SLURM Version 2.3 and Beyond</a>
+Morris Jette, SchedMD LLC</li>
+
+<li><a href="SC11_BOF/BULL_BOF_SC11.pdf">Bull's SLURM Roadmap</a>
+Eric Monchalin, Bull</li>
+
+<li><a href="SC11_BOF/Bright_BOF_SC11.pdf">Cloud Bursting with SLURM and Bright Cluster Manager</a>
+Martijn de Vries, Bright Computing</li>
+</ul>
+
+<!-- SLURM User Group Meeting 2011 -->
+<li><b>Presentations from SLURM User Group Meeting, September 2011</b></li>
+<ul>
+
+<li><a href="slurm_ug_2011/Basic_Configuration_Usage.pdf">Basic
+    Configuration and Usage</a>,
+Rod Schultz, Groupe Bull</li>
+
+<li><a href="slurm_ug_2011/Advanced_Usage_Tutorial.pdf">SLURM:
+    Advanced Usage</a>,
+Rod Schultz, Groupe Bull</li>
+
+<li><a href="slurm_ug_2011/cons_res.pdf">CPU Management Allocation
+    and Binding</a>,
+Martin Perry, Groupe Bull
+</li>
+
+<li><a href="slurm_ug_2011/SLURM_HA_Tutorial.pdf">Configuring SLURM for HA</a>,
+David Egolf - Bill Brophy, Groupe Bull
+</li>
+
+<li><a href="slurm_ug_2011/SLURM_UserGroup2011_cgroups.pdf">SLURM Resources isolation through cgroups</a>,
+Yiannis Georgiou, Groupe Bull
+<br>Matthieu Hautreux, CEA
+</li>
+
+<li><a href="slurm_ug_2011/SLURM.Cray.pdf">SLURM Operation on Cray XT and XE</a>,
+Moe Jette, SchedMD LLC
+</li>
+
+<!-- day 2 -->
+
+<li><a href="slurm_ug_2011/SLURM-Keynote-v.pdf">Challenges and Opportunities for Exscale
+Resource Management and How Today's Petascale Systems are Guiding the Way</a>,
+William Kramer, NCSA
+</li>
+
+<li><a href="slurm_ug_2011/cea_site_report-1.0.pdf">CEA Site report</a>,
+Matthieu Hautreux, CEA
+</li>
+
+<li><a href="slurm_ug_2011/LLNL_Site_Report_2011.pdf">LLNL Site Report</a>,
+Don Lipari, LLNL
+</li>
+
+<li><a href="slurm_ug_2011/SLURM.v23.status.pdf">SLURM Version 2.3 and
+    Beyond</a>,
+Moe Jette, SchedMD LLC
+</li>
+
+<li><a href="slurm_ug_2011/slurm_simulator_phoenix.pdf">SLURM Simulator</a>,
+Alejandro Lucero, BSC
+</li>
+
+<li><a href="slurm_ug_2011/SLURM_Grid_Ideas.pdf">Proposed Design for Enhanced
+Enterprise-wide Scheduling</a>,
+Don Lipari, LLNL
+</li>
+
+<li><a href="slurm_ug_2011/Bright_Computing_SLURM_integration.pdf">Bright
+    Cluster Manager & SLURM</a>,
+Robert Stober, Bright Computing
+</li>
+
+<li><a href="slurm_ug_2011/User.steps.design.pdf">Job Step Management in User Space</a>,
+Moe Jette, SchedMD LLC
+</li>
+
+<li><a href="slurm_ug_2011/SLURM.BGQ.pdf">SLURM Operation IBM BlueGene/Q</a>,
+Danny Auble, SchedMD LLC
+</li>
+</ul>
+
+<!-- Use LLNL-PRES-461787 -->
+<li><a href="pdfs/slurm_sc10_bof.pdf">SLURM Version 2.2: Features and Release Plans</a>,
+Morris Jette, Danny Auble and Donald Lipari, Lawrence Livermore National Laboratory
+(Supercomputing 2010, November 2010)</li>
+
+<li><b>Presentations from SLURM User Group Meeting, October 2010</b></li>
+<ul>
+<!-- Use LLNL-PRES-453794 -->
+<li><a href="slurm_ug_2010/01-keynote.pdf">SLURM: Resource Management from the Simple to the
+Sophisticated</a>,
+Morris Jette and Danny Auble, Lawrence Livermore National Laboratory
+(SLURM User Group Meeting, October 2010)</li>
+
+<!-- Use LLNL-PRES-461852 -->
+<li><a href="slurm_ug_2010/01-mh-cea.pdf">SLURM at CEA</a>,
+Matthieu Hautreux, CEA/DAM/DIF
+(SLURM User Group Meeting, October 2010)</li>
+
+<!-- Use LLNL-PRES-461778 -->
+<li><a href="slurm_ug_2010/02-mp-bull.pdf">SLURM Support for Linux Control Groups</a>,
+Martin Perry, Bull Information Systems
+(SLURM User Group Meeting, October 2010)</li>
+
+<!-- Use LLNL-PRES-459615 -->
+<li><a href="slurm_ug_2010/03-cf-bsc.pdf">SLURM at BSC</a>,
+Carles Fenoy and Alejandro Lucero, Barcelona Supercomputing Center
+(SLURM User Group Meeting, October 2010)</li>
+
+<!-- Use LLNL-PRES-461840 -->
+<li><a href="slurm_ug_2010/04-ns-cscs.pdf">Porting SLURM to the Cray XT and XE</a>,
+Neil Stringfellow and Gerrit Renker, Swiss National Supercomputer Centre
+(SLURM User Group Meeting, October 2010)</li>
+
+<!-- Use LLNL-PRES-461831 -->
+<li><a href="slurm_ug_2010/05-yg-bull.pdf">Real Scale Experimentations of SLURM Resource
+and Job Management System</a>,
+Yiannis Georgiou, Bull Information Systems
+(SLURM User Group Meeting, October 2010)</li>
+
+<!-- Use LLNL-PRES-453831 -->
+<li><a href="slurm_ug_2010/06-mjda-llnl.pdf">SLURM Version 2.2: Features and Release Plans</a>,
+Morris Jette and Danny Auble, Lawrence Livermore National Laboratory
+(SLURM User Group Meeting, October 2010)</li>
+</ul>
+
+<!-- Use LLNL-PRES-402832 -->
+<li><a href="pdfs/slurm_sc09_bof.pdf">SLURM Community Meeting</a>,
+Morris Jette, Danny Auble and Don Lipari, Lawrence Livermore National Laboratory
+(Supercomputing 2009, November 2009)</li>
+
+<!-- Use LLNL-PRES-408498 -->
+<li><a href="pdfs/slurm.sc08.bof.pdf">High Scalability Resource Management with
+SLURM</a>,
+Morris Jette, Lawrence Livermore National Laboratory
+(Supercomputing 2008, November 2008)</li>
+
+<!-- Use LLNL-PRES-408510 -->
+<li><a href="pdfs/slurm.sc08.status.pdf">SLURM Status Report</a>,
+Morris Jette and Danny Auble, Lawrence Livermore National Laboratory
+(Supercomputing 2008, November 2008)</li>
+
+<!-- Use LLNL-PRES-402832 -->
+<li><a href="pdfs/slurm_v1.3.pdf">SLURM Version 1.3</a>,
+Morris Jette and Danny Auble, Lawrence Livermore National Laboratory
+(May 2008)</li>
+
+<!-- Use LLNL-PRES-403148 -->
+<li><a href="pdfs/slurm_moab.pdf">Managing Clusters with Moab and SLURM</a>,
+Morris Jette and Donald Lipari, Lawrence Livermore National Laboratory
+(May 2008)</li>
+
+<!-- Use UCRL-PRES-230170 -->
+<li><a href="pdfs/slurm_v1.2.pdf">Resource Management at LLNL, SLURM Version 1.2</a>,
+Morris Jette, Danny Auble and Chris Morrone, Lawrence Livermore National Laboratory
+(April 2007)</li>
+
+<!-- Use UCRL-PRES-219562 -->
+<li><a href="pdfs/lci.7.tutorial.pdf">Resource Management Using SLURM</a>,
+Morris Jette, Lawrence Livermore National Laboratory
+(Tutorial, The 7th International Conference on Linux Clusters, May 2006)</li>
+</ul>
+
+<h2>Publications</h2>
+
+<ul>
+
+<li>GreenSpot: Scheduling Energy Consumption in Green Datacenters,
+Inigo Goiri, et. al.
+(SuperComputing 2011, November 2011)</li>
+
+<li><a href="http://mescal.imag.fr/membres/yiannis.georgiou/publications/thesis_Georgiou-2010-UJF.pdf">
+<b>Contributions for Resource and Job Management in High Performance Computing</b></a>,
+Yiannis Georgiou, Universite Joseph Fourier
+(Thesis, December 2010)</li>
+
+<li><a href="http://www.linux-mag.com/id/7239/1/">
+<b>Caos NSA and Perceus: All-in-one Cluster Software Stack</b></a>,
+Jeffrey B. Layton,
+<i>Linux Magazine</i>,
+5 February 2009.</li>
+
+<li><b>Enhancing an Open Source Resource Manager with Multi-Core/Multi-threaded Support</b>,
+S. M. Balle and D. Palermo,
+<i>Job Scheduling Strategies for Parallel Processing</i>,
+2007.</li>
+
+<!-- Use UCRL-MA-147996 -->
+<li><a href="slurm_design.pdf">
+<b>SLURM: Simple Linux Utility for Resource Management</b></a> [PDF],
+M. Jette and M. Grondona,
+<i>Proceedings of ClusterWorld Conference and Expo</i>,
+San Jose, California, June 2003.</li>
+
+<li><b>SLURM: Simple Linux Utility for Resource Management</b>,
+A. Yoo, M. Jette, and M. Grondona,
+<i>Job Scheduling Strategies for Parallel Processing</i>,
+volume 2862 of <i>Lecture Notes in Computer Science</i>,
+pages 44-60,
+Springer-Verlag, 2003.</li>
+</ul>
+
+<h2>Interview</h2>
+
+<p><a href="http://www.rce-cast.com/index.php/Podcast/rce-10-slurm.html">
+RCE 10: SLURM (podcast)</a>:
+Brock Palen and Jeff Squyres speak with Morris Jette and
+Danny Auble of LLNL about SLURM.</p>
+
+<h2>Other Resources</h2>
+
+<p><a href="http://blog.ajdecon.org/learning-chef-compute-cluster-with-slurm">
+Learning Chef: Compute Cluter with SLURM</a>
+A SLURM Cookbook by Adam DeConinck</p>
+
+<p style="text-align:center;">Last modified 4 February 2013</p>
+
+</div> <!-- closes "row" -->
+</div> <!-- closes "content" -->
+<div id="row">
+<div id="footer">
+<div id="left">&nbsp;&nbsp;<a href="disclaimer.html" target="_blank" class="privacy">Legal Notices</a></div>
+<div id="right"><span class="ucrlnum"></span></div>
+</div>
+
+<div id="footer2">
+<div style="clear:both;"></div>
+</div>
+</div> <!-- closes "row" -->
+
+</div> <!-- closes "container" -->
+
+</body>
+</html>
+
